@@ -560,6 +560,25 @@ class Character extends FlxSprite
 
 				antialiasing = false;
 
+			case 'garrett:
+				tex = Paths.getSparrowAtlas('characters/Garrett', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'garrett idle', 24, false);
+				animation.addByPrefix('singUP', 'garrett up', 24, false);
+				animation.addByPrefix('singRIGHT', 'garrett right', 24, false);
+				animation.addByPrefix('singDOWN', 'garrett down', 24, false);
+				animation.addByPrefix('singLEFT', 'garrett left', 24, false);
+
+				loadOffsetFile(curCharacter);
+
+				barColor = FlxColor.fromRGB(228, 85, 81);
+
+				setGraphicSize(Std.int(width * 2));
+				updateHitbox();
+				antialiasing = false;
+
+				playAnim('idle');
+
 			// Bananacore shit
 			// You can basically ignore everything beyond this point
 			// Most of these are just one-time characters that appear for a few seconds
