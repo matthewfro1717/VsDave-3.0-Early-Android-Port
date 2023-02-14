@@ -77,7 +77,7 @@ class Main extends Sprite
 
 		initialState = StartStateSelector;
 		SUtil.checkPermissions();
-		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, skipSplash, startFullscreen));
+		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, skipSplash, startFullscreen));
 
 		fps = new FpsDisplay(10, 3, 0xFFFFFF);
 		var fpsFormat = new TextFormat("Comic Sans MS Bold", 15, 0xFFFFFF, true);
