@@ -137,6 +137,12 @@ class PlayState extends MusicBeatState
 		'pissey',
 		'pooper',
 		'shartey'
+		'cockey-v2',
+		'pissey-v2',
+		'pooper-v2',
+		'shartey',
+                'cockey-old',
+                'bombu'
 	];
 
 	var storyDifficultyText:String = "";
@@ -525,7 +531,7 @@ class PlayState extends MusicBeatState
 					stageCheck = 'house-night';
 				case 'secret' | 'overdrive':
 					stageCheck = 'house-sunset';
-				case 'electric-cockaldoodledoo':
+				case 'bananacore | eletric-cockadoodledoo | electric-cockaldoodledoo':
 					stageCheck = 'banana-hell';
 				case 'vs-dave-rap':
 					stageCheck = 'rapBattle';
@@ -533,6 +539,8 @@ class PlayState extends MusicBeatState
 					stageCheck = 'freeplay';
 				case 'secret-mod-leak':
 					stageCheck = 'roof';
+				case 'bonkers':
+					stageCheck = 'bonk';
 				case 'tutorial':
 					stageCheck = 'stage';
 			}
@@ -1334,6 +1342,18 @@ class PlayState extends MusicBeatState
 					sprites.add(bg);
 					add(bg);
 				#end */
+
+			case 'bonk':
+				bgZoom = 0.5;
+				stageName = 'bonk';
+
+				var bonkBG = new BGSprite('bonkBG', -500, -300, '', null, false, true);
+				bonkBG.loadGraphic(Paths.image('backgrounds/bonkers/bonk', 'shared'));
+				bonkBG.setPosition(0, 200);
+				bonkBG.setGraphicSize(Std.int(expungedBG.width * 2));
+				bonkBG.scrollFactor.set();
+				sprites.add(bonkBG);
+				add(bonkBG);
 
 			case 'red-void' | 'green-void' | 'glitchy-void' | 'interdimension-void' | "banana-hell":
 				bgZoom = 0.7;
