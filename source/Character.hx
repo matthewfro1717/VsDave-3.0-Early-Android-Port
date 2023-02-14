@@ -560,7 +560,7 @@ class Character extends FlxSprite
 
 				antialiasing = false;
 
-			case 'garrett:
+			case 'garrett':
 				tex = Paths.getSparrowAtlas('characters/Garrett', 'shared');
 				frames = tex;
 				animation.addByPrefix('idle', 'garrett idle', 24, false);
