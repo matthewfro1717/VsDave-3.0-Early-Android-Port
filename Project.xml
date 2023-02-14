@@ -48,8 +48,6 @@
 	<assets path='art/readme.txt' rename='PLEASE READ.txt' />
 	<assets path='art/icons' rename='icons' embed='true'/>
 	<assets path="CHANGELOG.md" rename='changelog.txt'/>
-	<assets path="plugins/" rename='' if="windows"/>
-	<assets path="dlls/" rename='' if="windows"/>
 	<assets path="assets/fonts" embed='true'/>
 	
 	<define name="PRELOAD_ALL" unless="web" />
