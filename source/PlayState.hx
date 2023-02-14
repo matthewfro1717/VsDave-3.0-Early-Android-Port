@@ -136,7 +136,7 @@ class PlayState extends MusicBeatState
 		'cockey',
 		'pissey',
 		'pooper',
-		'shartey'
+		'shartey',
 		'cockey-v2',
 		'pissey-v2',
 		'pooper-v2',
