@@ -564,14 +564,52 @@ class Character extends FlxSprite
 			// You can basically ignore everything beyond this point
 			// Most of these are just one-time characters that appear for a few seconds
 
+			case 'cockey-old':
+				tex = Paths.getSparrowAtlas('bananacore/characters/Cockey', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'Up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Right', 24, false);
+				animation.addByPrefix('singDOWN', 'Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Left', 24, false);
+
+				loadOffsetFile(curCharacter);
+
+				barColor = FlxColor.fromRGB(228, 85, 81);
+
+				setGraphicSize(Std.int(width * 2));
+				updateHitbox();
+				antialiasing = false;
+
+				playAnim('idle');
+
+			case 'bombu':
+				tex = Paths.getSparrowAtlas('bananacore/characters/bombu', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+
+				loadOffsetFile(curCharacter);
+
+				barColor = FlxColor.fromRGB(228, 85, 81);
+
+				setGraphicSize(Std.int(width * 2));
+				updateHitbox();
+				antialiasing = false;
+
+				playAnim('idle');
+
 			case 'cockey':
 				tex = Paths.getSparrowAtlas('eletric-cockadoodledoo/characters/Cockey', 'shared');
 				frames = tex;
-				animation.addByPrefix('idle', 'Cockey idle', 24, false);
-				animation.addByPrefix('singUP', 'Cockey up', 24, false);
-				animation.addByPrefix('singRIGHT', 'Cockey right', 24, false);
-				animation.addByPrefix('singDOWN', 'Cockey down', 24, false);
-				animation.addByPrefix('singLEFT', 'Cockey left', 24, false);
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
 
 				loadOffsetFile(curCharacter);
 
@@ -585,7 +623,7 @@ class Character extends FlxSprite
 
 			case 'pissey':
 				tex = Paths.getSparrowAtlas('eletric-cockadoodledoo/characters/Pissey', 'shared');
-				frames = tex;
+				frames = tex; the
 				animation.addByPrefix('idle', 'idle', 24, false);
 				animation.addByPrefix('singUP', 'up', 24, false);
 				animation.addByPrefix('singRIGHT', 'right', 24, false);
@@ -694,6 +732,66 @@ class Character extends FlxSprite
 				loadOffsetFile(curCharacter);
 
 				playAnim('idle');
+
+			case 'cockey-v2':
+				tex = Paths.getSparrowAtlas('eletric-cockadoodledoo/characters/v2/Cockey', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Cockey idle', 24, false);
+				animation.addByPrefix('singUP', 'Cockey up', 24, false);
+				animation.addByPrefix('singRIGHT', 'Cockey right', 24, false);
+				animation.addByPrefix('singDOWN', 'Cockey down', 24, false);
+				animation.addByPrefix('singLEFT', 'Cockey left', 24, false);
+
+				loadOffsetFile(curCharacter);
+
+				barColor = FlxColor.fromRGB(228, 85, 81);
+
+				setGraphicSize(Std.int(width * 2));
+				updateHitbox();
+				antialiasing = false;
+
+				playAnim('idle');
+
+			case 'pissey-v2':
+				tex = Paths.getSparrowAtlas('eletric-cockadoodledoo/characters/v2/Pissey', 'shared');
+				frames = tex; the
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				animation.addByPrefix('phoneOFF', 'turning his phone off', 24, true);
+				animation.addByPrefix('phoneAWAY', 'putting his phone away', 24, false);
+
+				loadOffsetFile(curCharacter);
+
+				barColor = FlxColor.fromRGB(255, 206, 11);
+
+				setGraphicSize(Std.int(width * 1.85));
+				updateHitbox();
+				antialiasing = false;
+
+				playAnim('idle');
+
+			case 'pooper-v2':
+				tex = Paths.getSparrowAtlas('eletric-cockadoodledoo/characters/Pooper', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+
+				loadOffsetFile(curCharacter);
+
+				barColor = FlxColor.fromRGB(136, 104, 107);
+
+				setGraphicSize(Std.int(width * 4.75));
+				updateHitbox();
+				antialiasing = false;
+
+				playAnim('idle');
+
 			case 'recurser':
 				frames = Paths.getSparrowAtlas('recursed/Recurser', "shared");
 
