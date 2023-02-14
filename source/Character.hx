@@ -642,7 +642,7 @@ class Character extends FlxSprite
 
 			case 'pissey':
 				tex = Paths.getSparrowAtlas('eletric-cockadoodledoo/characters/Pissey', 'shared');
-				frames = tex; the
+				frames = tex;
 				animation.addByPrefix('idle', 'idle', 24, false);
 				animation.addByPrefix('singUP', 'up', 24, false);
 				animation.addByPrefix('singRIGHT', 'right', 24, false);
